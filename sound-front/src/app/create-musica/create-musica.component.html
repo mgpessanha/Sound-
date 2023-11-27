@@ -1,0 +1,18 @@
+<h1 mat-dialog-title class="adicionar-musica">Adicionar Música</h1>
+<div mat-dialog-content>
+  <mat-form-field>
+    <mat-label>nome</mat-label>
+    <input matInput [formControl]="nomeMusica" required />
+  </mat-form-field>
+  <br>
+  <mat-form-field>
+    <mat-label>autor</mat-label>
+    <textarea matInput [formControl]="autorMusica" required></textarea>
+  </mat-form-field>
+</div>
+<div mat-dialog-actions class="botoes">
+  <button mat-button>Cancelar</button>
+  <button mat-button cdkFocusInitial (click)="adicionarNovaMusica();">Ok</button>
+</div>
+
+<!-- ja mexi -->
